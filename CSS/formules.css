@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banniere_image {
+  top: 0;
+  background-image: none;
+  height: 100%;
+}
+.nextPageService {
+  /*position: absolute fixed;*/
+  font-size: 2.5em;
+  color: var(--color1);
+  cursor: pointer;
+}
+.nextPageService a {
+  text-decoration: none;
+  color: var(--color1);
+}
+/*.nextD {
+  top: 280px;
+  left: calc(100vw - 65px);
+}
+.nextG {
+  top: 280px;
+  left: 10px;
+}*/
+.mServices {
+  align-items: center;
+  margin: 15px;
+}
+.mServices p {
+  margin-bottom: 15px;
+}
+.services {
+  padding: 80px 10px 30px 10px;
+  font-size: 1.2em;
+  height: calc(100vh - 153px);
+}
+.services .mesServices {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.services .service1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.services .service1 .service {
+  /*height: auto;*/
+  width: auto;
+  margin: 20px 10px;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+
+.services .service h3 {
+  height: 50px;
+}
+.services .service div {
+  background-color: var(--color4);
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .services .service1 .service {
+    width: 230px;
+    margin: 20px 10px;
+  }
+  .services .service div {
+    height: 120px;
+  }
+  .services .service h3 {
+    height: 75px;
+  }
+  .services {
+    height: auto;
+  }
+}
+@media (max-width: 850px) {
+  .nextPageService {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 800px) {
+  .services .service1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .services .service1 .service {
+    width: 80%;
+    margin: 20px 10px;
+  }
+  .nextPageService {
+    font-size: 2.5em;
+  }
+  .services .service div {
+    height: auto;
+  }
+  .services .service h3 {
+    height: 30px;
+  }
+}
+@media (max-width: 690px) {
+  .services .service1 .service {
+    width: 80%;
+    margin: 20px 10px;
+  }
+  .services .service h3 {
+    height: auto;
+  }
+  .mServices p {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 530px) {
+  .services .service1 .service {
+    width: 90%;
+    margin: 20px 5px;
+  }
+  .services .service div {
+    height: auto;
+  }
+  .nextPageService {
+    font-size: 1.7em;
+  }
+}
